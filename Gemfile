@@ -33,10 +33,6 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-#For styling
-gem 'materialize-sass'
-
-
 
 #For authentication
 gem 'devise'
@@ -49,8 +45,8 @@ gem 'rails-timeago'
 
 #jquery install
 gem 'jquery-rails'
-
-gem 'jquery-turbolinks'
+#For styling
+gem 'materialize-sass'
 
 #For pretty print routes
 gem 'friendly_id'
