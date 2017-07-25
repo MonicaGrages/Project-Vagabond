@@ -12,6 +12,7 @@ class ApplicationController < ActionController::Base
 
   def home
     @cities = City.all
+    puts @cities
     render 'cities/home'
   end
 
