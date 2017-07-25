@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
 
 
   def home
+    @cities = City.all
     render 'cities/home'
   end
 
