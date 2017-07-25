@@ -1,6 +1,10 @@
 <div class='city_hero_image home_page_image'></div>
 
-<% @cities.each do |city| %>
-  <div class='home_atlanta_link_container'><%= link_to city.name, "/cities/#{city.slug}", class: "home_atlanta_link" %></div>
-<% end %>
-<div class='home_atlanta_link_container'><%= link_to "+", '/cities/new', class: "home_atlanta_link" %></div>
+<div class='home_city_link_container'>
+  <% @cities.each do |city| %>
+    <%= link_to city.name, "/cities/#{city.slug}", class: "home_city_link" %>
+  <% end %>
+  <a href="/cities/new" class="btn-floating waves-effect waves-light red">
+    <i class="material-icons">add</i>
+  </a>
+</div>

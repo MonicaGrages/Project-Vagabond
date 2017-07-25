@@ -15,14 +15,16 @@
   margin-right: 10px;
 }
 
-.home_atlanta_link_container {
+.home_city_link_container {
   display: flex;
   justify-content: center;
-  .home_atlanta_link {
+  flex-direction: column;
+  align-items: center;
+  .home_city_link {
     font-size: 60px;
     font-family: 'Shrikhand', cursive;
   }
-  .home_atlanta_link:hover {
+  .home_city_link:hover {
     text-shadow: 2px 2px #ee6e73;
   }
 }
@@ -219,6 +221,13 @@
   }
   #mobile-logo{
     font-size: 28px;
+  }
+  .home_city_link_container {
+    flex-direction: column;
+    align-items: center;
+    .home_city_link {
+      font-size: 25px;
+    }
   }
   .city_show_posts_container {
     flex-direction: column;
